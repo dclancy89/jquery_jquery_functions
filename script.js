@@ -89,6 +89,31 @@ $(document).ready(function() {
 		$('p.text').text("WORDS ARE APPEARING FROM NOWHERE!");
 	});
 
+	// .data
+	$('#setdata').click(function() {
+		$('#storage').data({"first_name":"Dave", "last_name":"Grohl"});
+		alert("First and Last name data set successfully!");
+		$('#showdata').removeClass('hidden');	
+	});
+
+	$('#showdata').click(function() {
+		var dataString = '<p>';
+		var $first_name = $('#storage').data('first_name')
+		var $last_name = $('#storage').data('last_name')
+
+		if(typeof $first_name !== 'undefined') {
+			dataString += "Storage Div first name: " + $first_name + '<br />';
+		}
+
+		if(typeof $last_name !== 'undefined') {
+			dataString += "Storage Div last name: " + $last_name + '<br />';
+		}
+
+		dataString += '</p>';
+
+		$('#showdata').after(dataString);
+	});
+
 
 
 
