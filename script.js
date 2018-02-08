@@ -79,6 +79,16 @@ $(document).ready(function() {
 		$('p.output').html($('#mystery').attr('href'));
 	});
 
+	// .val
+	$('#val').click(function(){
+		$('p.output2').text($('#password').val());
+	});
+
+	// .text
+	$('#text').click(function() {
+		$('p.text').text("WORDS ARE APPEARING FROM NOWHERE!");
+	});
+
 
 
 
