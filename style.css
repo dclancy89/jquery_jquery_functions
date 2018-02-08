@@ -70,3 +70,8 @@ img {
 .section:nth-child(10).pizazz .button {
 	background-color: orange;
 }
+
+span.large {
+	font-weight: bold;
+	font-size: 2rem;
+}

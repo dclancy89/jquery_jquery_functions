@@ -62,4 +62,30 @@ $(document).ready(function() {
 	$('#after').click(function() {
 		$('#line2').after('<img src="images/niceguy.jpg" alt="nice guy" class="inline-block" id="niceguy"/>');
 	});
+
+	// .append function
+	$('#append').click(function() {
+		$('#bank').append("00");
+		$('.section:nth-child(13) p:last-child').show();
+	});
+
+	// .html function
+	$('#html').click(function() {
+		$('.section:nth-child(14) p:first-of-type').html('<span class="large">HAHAHA I LIED. I DIDNT GET ANY CONTENT!</span>');
+	});
+
+	// .attr function
+	$('#attr').click(function() {
+		$('p.output').html($('#mystery').attr('href'));
+	});
+
+
+
+
+
+
 });
+
+
+
+
